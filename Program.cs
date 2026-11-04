@@ -1,4 +1,8 @@
-﻿static void Main(string[] args)
+﻿namespace TicTacToeGame
+{
+    class Program
+    {
+        static void Main(string[] args)
         {
             PlayGame();
             Console.ReadLine();
@@ -119,7 +123,6 @@
             // If there is no winner, return a space
             return ' ';
         }
-
         // Method to check for a draw
         static bool CheckDraw(char[] board)
         {
@@ -134,3 +137,5 @@
             }
             return true; // If the loop reached the end and found no free cells — it's a draw
         }
+    }
+}
